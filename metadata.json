@@ -1,0 +1,6 @@
+{
+  "name": "LUXE AI MARKETPLACE™",
+  "description": "AI Luxury Commerce Ecosystem for ultra-rare assets, utilizing Gemini Vision for elite collector valuations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

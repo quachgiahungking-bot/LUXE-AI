@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-onyx: #0A0A0A;
+  --color-charcoal: #1A1A1A;
+  --color-smoke: #E0D8D0;
+  --font-display: Georgia, ui-serif, serif;
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-onyx text-smoke font-sans antialiased selection:bg-gold selection:text-onyx;
+  margin: 0;
+  height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-onyx);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-charcoal);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#0d0d0d] border border-charcoal shadow-2xl;
+  }
+  .gold-gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold via-[#FFF2C8] to-gold;
+  }
+  .gold-border {
+    @apply border border-gold/30;
+  }
+  .main-stage-bg {
+    background: radial-gradient(circle at center, #222 0%, #0a0a0a 70%);
+  }
+  .header-bg {
+    background: linear-gradient(to bottom, #111, #0a0a0a);
+  }
+}
+
